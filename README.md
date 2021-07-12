@@ -1,1 +1,1 @@
-# landing-page
+# my-teammate-university
