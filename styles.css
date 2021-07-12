@@ -1,0 +1,188 @@
+/*practice fonts changes */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* common style  */
+body{
+    font-family: 'Bebas Neue', cursive;
+    background-color: #F3F1FF;
+    margin: 0;
+    margin-bottom: 20px;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    height: 58px;
+    background-color: lightseagreen;
+  }
+  .icons {
+    width: 35px;
+    height: 40px;
+  }
+  ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-left: 18%;
+    margin-right: 18%;
+    padding: 3px;
+    overflow: hidden;
+    color: #ffffff;
+  }
+  li {
+    float: right;
+  }
+  li a {
+    display: flex;
+    color: white;
+    padding: 15px 17px;
+    text-decoration: none;
+  }
+  
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5x;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+.teammates{
+    margin-bottom: 30px;
+}
+.section-title{
+    color: rgb(68, 206, 68);
+    font-size: 22px;
+    margin-top: 3px;
+}
+/* top players style */
+.batchmates{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap:30px ;
+}
+.batchmate{
+    display: flex;
+    align-items: center;
+}
+/* gorib der image deikkai nen */
+.batchmate img{
+    width: 56px;
+    height: 56px;
+}
+.batchmate-name{
+    margin-left: 16px;
+    font-size: 18px;
+    color: steelblue;
+}
+.blog{
+    display: flex;
+}
+/* amra ekekta ailsa kaj korte chaina top blogs */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap:26px ;
+}
+.blog .thumbnail img{
+    width: 177px;
+    height: 117px; 
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+    color: aqua;
+}
+.blog-author{
+    font-size: 16px;
+    color: orange;
+}
+.blog-author a{
+    text-decoration: none;
+    font-size: 16px;
+    color:limegreen;
+}
+/* courses styles */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:24px ;
+}
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.instructor{
+    color: lightcoral;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: yellowgreen;
+}
+.fa-star.empty{
+    color: lightgray;
+}
+.fa-clock{
+    font-size: 14px;
+}
+.fa-clock.tat{
+    color: #FF4A60;  
+    border-radius:14px ;
+    background-image: linear-gradient(#FEE5DF);
+    padding: 5px, 8px;
+}
+.fa-clock.joti{
+    color: #ED6B4F; 
+    border-radius:14px ;
+    background-image: linear-gradient(#FFE4E8);   
+    padding: 5px, 8px;  
+}
+.fa-clock.sourab{
+    color: #FF4A60;
+    border-radius:14px ; 
+    background-image: linear-gradient(#FEE5DF);
+    padding: 5px, 8px;
+}
+/* Andriod Devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player, .blog, .courses{
+        flex-direction: column;
+    }  
+}
+/* tab-pad devies */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .player, .blog, .courses{
+        flex-direction: column;
+    }
+    
+}
