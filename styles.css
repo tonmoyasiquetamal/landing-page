@@ -115,6 +115,9 @@ hr{
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap:24px ;
 }
+.course-title{
+    color:hotpink;
+}
 .course .course-banner img{
     width: 224px;
     height: 104px;
